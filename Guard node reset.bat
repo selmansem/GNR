@@ -3,6 +3,7 @@
 :: Author:   https://github.com/selmansem
 :: Revision: March 2021 - initial version
 ::           March 2021 - v1.1 -> Design modification | Process lookup | Code cleanup
+::           March 2021 - v1.1.1 -> Design modification
 
 @ECHO off
 TITLE Guard node reset
@@ -75,7 +76,7 @@ exit /B 0
 
 :end
 ECHO Bye :)
-timeout /t 1 /nobreak > NUL
+timeout /t 3 /nobreak > NUL
 ENDLOCAL
 ECHO ON
 @EXIT /B 0
